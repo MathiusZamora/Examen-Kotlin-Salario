@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity() {
 
             val SalarioN = SalBrut - Deduccion
 
-            binding.tvSalarioB.text = "El salario Bruto es $SalBrut"
-            binding.tvDeduccionINSS.text = "La deduccion de INSS es $Deduccion"
+            binding.tvSalarioB.text = "$SalBrut"
+            binding.tvDeduccionINSS.text = "$Deduccion"
             binding.tvSalarioNeto.text = "El Salario neto es $SalarioN"
         }
 

@@ -6,46 +6,50 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="367dp"
         android:layout_height="wrap_content"
-        android:text="Nombre del trabajador"
-        android:textSize="20sp"
         android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="25dp"
         android:gravity="center"
-        />
+        android:text="Nombre del trabajador"
+        android:textSize="20sp" />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/etNombreTrab"
-        android:hint="introduce el nombre del trabajador"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="25dp"
         android:layout_marginTop="10dp"
-        android:padding="10dp"
         android:gravity="center"
-        android:inputType="text"/>
+        android:hint="introduce el nombre del trabajador"
+        android:inputType="text"
+        android:padding="10dp" />
 
     <TextView
         android:id="@+id/tvHorasT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Horas trabajadas"
+        android:layout_marginHorizontal="25dp"
         android:textSize="20sp"
         android:layout_marginTop="20dp"
         android:gravity="center"
         />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/etHorasT"
-        android:hint="introduce el numero de horas trabajadas"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginHorizontal="25dp"
         android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:gravity="center" />
+        android:gravity="center"
+        android:hint="introduce el numero de horas trabajadas"
+        android:padding="10dp" />
     <TextView
         android:id="@+id/tvTarifaXHor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
         android:text="Tarifa por Hora"
         android:textSize="20sp"
         android:layout_marginTop="20dp"
@@ -53,13 +57,14 @@
         />
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/etTarifaXHor"
-        android:hint="introduce las tarifas por horas"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="25dp"
         android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:hint="introduce las tarifas por horas"
+        android:padding="10dp" />
 
     <Button
         android:layout_width="match_parent"
@@ -67,7 +72,20 @@
         android:id="@+id/bCalcular"
         android:text="Calcular"
         android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="25dp"
         android:padding="10dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/ttvSalarioB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Su salario bruto es:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="25dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
         android:gravity="center"/>
 
     <TextView
@@ -77,27 +95,43 @@
         android:text="0"
         android:textSize="24sp"
         android:textStyle="bold"
+        android:layout_marginHorizontal="25dp"
         android:textColor="@color/black"
         android:layout_marginTop="20dp"
         android:gravity="center"/>
 
+    <TextView
+        android:id="@+id/ttvtvDeduccionINSS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="La deduccion de INSS es:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="25dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
     <TextView
         android:id="@+id/tvDeduccionINSS"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="0"
         android:textSize="24sp"
+        android:layout_marginHorizontal="25dp"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:layout_marginTop="20dp"
         android:gravity="center"/>
 
+
+
     <TextView
         android:id="@+id/tvSalarioNeto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text=" "
         android:textSize="24sp"
+        android:layout_marginHorizontal="25dp"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:layout_marginTop="20dp"
